@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       # ⚠️ 改成你本地的 Hugo 版本号（在终端执行 hugo version 查看）
-      HUGO_VERSION: 0.145.0
+      HUGO_VERSION: v0.163.3
     steps:
       - name: 检出代码
         uses: actions/checkout@v4
