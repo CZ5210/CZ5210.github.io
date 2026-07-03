@@ -1,0 +1,24 @@
+# ═══════════════════════════════════════
+# Hugo 博客站点配置
+# ═══════════════════════════════════════
+
+# GitHub Pages 地址
+baseURL = 'https://cz5210.github.io/'
+
+# 中文站点
+languageCode = 'zh-cn'
+defaultContentLanguage = 'zh'
+hasCJKLanguage = true
+title = '我的技术博客'
+
+# Stack 主题（已通过 git submodule 安装，用本地路径）
+theme = 'hugo-theme-stack'
+
+# 分页：每页 5 篇文章
+[pagination]
+  pagerSize = 5
+
+# 永久链接格式
+[permalinks]
+  post = '/p/:slug/'
+  page = '/:slug/'

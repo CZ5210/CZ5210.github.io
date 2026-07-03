@@ -1,0 +1,46 @@
+# ═══════════════════════════════════════
+# Stack 主题参数
+# ═══════════════════════════════════════
+
+# 主内容区域 = post 目录
+mainSections = ['posts']
+
+# RSS 输出全文
+rssFullContent = true
+
+# 站点图标（使用头像图片）
+favicon = 'img/avatar.png'
+
+# ─── 页脚 ───
+[footer]
+  since = 2026
+
+# ─── 左侧边栏 ───
+[sidebar]
+  # 把你的头像放到 assets/img/avatar.png
+  avatar = 'img/avatar.png'
+  # 头像右下角的 emoji（可选，不需要的话删掉这一行）
+  emoji = '💻'
+  # 头像下方的一行简介
+  subtitle = '个人技术博客 · 记录学习与思考'
+
+# ─── 文章设置 ───
+[article]
+  # 文章底部版权声明
+  [article.license]
+    enabled = false
+    # default = 'Licensed under CC BY-NC-SA 4.0'
+
+# ─── 右侧边栏小部件 ───
+[widgets]
+  homepage = [
+    { type = 'search' },
+    { type = 'archives', params = { limit = 5 } },
+    { type = 'categories', params = { limit = 10 } },
+    { type = 'tag-cloud', params = { limit = 10 } },
+  ]
+  page = [{ type = 'toc' }]
+
+# ─── 评论系统（暂时关闭，后续可接入 Giscus） ───
+[comments]
+  enabled = false
