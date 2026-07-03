@@ -1,0 +1,53 @@
+/* ═══════════════════════════════════════
+   自定义样式 + 外观控制面板
+   ═══════════════════════════════════════ */
+
+/*
+ * ┌─────────────────────────────────────────┐
+ * │  外观速查表（在哪里改什么）              │
+ * ├─────────────────────────────────────────┤
+ * │                                        │
+ * │  📝 站点标题 → config/_default/hugo.toml │
+ * │     title = '恒博的个人主页'            │
+ * │                                        │
+ * │  📝 头像简介 → config/_default/params.toml
+ * │     subtitle = '携手前往光明的新世界'    │
+ * │                                        │
+ * │  🖼️ 头像图片 → assets/img/avatar.png    │
+ * │     （直接替换文件）                     │
+ * │                                        │
+ * │  😊 头像emoji → config/_default/params.toml
+ * │     emoji = '🚀'                        │
+ * │                                        │
+ * │  🔗 GitHub链接 → config/_default/menu.toml
+ * │     url = 'https://github.com/cz5210'   │
+ * │                                        │
+ * │  📋 导航菜单 → config/_default/menu.toml │
+ * │     [[main]] 下的 name = '文章' 等      │
+ * │                                        │
+ * │  📅 页脚年份 → config/_default/params.toml
+ * │     since = 2026                        │
+ * │                                        │
+ * │  🎨 下面所有样式修改 → 直接改本文件      │
+ * └─────────────────────────────────────────┘
+ */
+
+/* ─── 侧边栏：头像大小 + emoji 大小 ─── */
+.left-sidebar {
+    --sidebar-avatar-size: 125px;  /* 头像尺寸，默认 100px */
+    --emoji-size: 32px;            /* emoji 圆圈大小，默认 40px */
+    --emoji-font-size: 17px;       /* emoji 字号，默认 20px */
+}
+
+/* ─── 站点标题文字 ─── */
+.sidebar header .site-name {
+    font-size: 2.5rem;    /* 字号 */
+    font-weight: 700;     /* 字重 */
+}
+
+/* ─── 简介文字 ─── */
+.sidebar header .site-description {
+    font-size: 1.5rem;    /* 字号 */
+    font-weight: normal;  /* 字重 */
+    opacity: 0.7;         /* 透明度，0~1 */
+}

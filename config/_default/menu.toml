@@ -27,11 +27,32 @@
   url = '/about/'
   weight = 4
 
-# ─── 社交链接（侧边栏下方图标） ───
+# ─── 社交链接（侧边栏下方图标，按书写顺序排列） ───
+
+[[social]]
+  identifier = 'email'
+  name = '邮箱'
+  url = 'mailto:18201974331@163.com'
+  weight = 1
+
+  [social.params]
+    icon = 'mail'
+
+[[social]]
+  identifier = 'bilibili'
+  name = 'B站'
+  url = 'https://space.bilibili.com/482993434'
+  weight = 2
+
+  [social.params]
+    icon = 'brand-bilibili'
+
 [[social]]
   identifier = 'github'
   name = 'GitHub'
   url = 'https://github.com/cz5210'
+  weight = 3
 
   [social.params]
     icon = 'brand-github'
+

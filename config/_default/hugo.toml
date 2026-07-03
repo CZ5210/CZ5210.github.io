@@ -9,7 +9,7 @@ baseURL = 'https://cz5210.github.io/'
 languageCode = 'zh-cn'
 defaultContentLanguage = 'zh'
 hasCJKLanguage = true
-title = '我的技术博客'
+title = '恒博的博客'
 
 # Stack 主题（已通过 git submodule 安装，用本地路径）
 theme = 'hugo-theme-stack'
