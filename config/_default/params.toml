@@ -20,9 +20,9 @@ favicon = 'img/avatar.png'
   # 把你的头像放到 assets/img/avatar.png
   avatar = 'img/avatar.png'
   # 头像右下角的 emoji（可选，不需要的话删掉这一行）
-  emoji = '💻'
+  emoji = '🚀'
   # 头像下方的一行简介
-  subtitle = '个人技术博客 · 记录学习与思考'
+  subtitle = '携手前往光明的新世界'
 
 # ─── 文章设置 ───
 [article]
