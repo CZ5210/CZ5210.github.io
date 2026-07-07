@@ -1,0 +1,21 @@
+{{ define "main" }}
+    {{/* 主页顶部 Hero 图片卡片 */}}
+    <div class="hero-image-card">
+        <img src='{{ "img/BG.jpg" | relURL }}' alt="Hero Image">
+    </div>
+
+    {{- $paginator := partial "helper/paginator.html" . -}}
+
+    <section class="article-list">
+        {{ range $index, $element := $paginator.Pages }}
+            {{ partial "article-list/default" . }}
+        {{ end }}
+    </section>
+
+    {{- partial "pagination.html" . -}}
+    {{- partial "footer/footer" . -}}
+{{ end }}
+
+{{ define "right-sidebar" }}
+    {{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
+{{ end }}
